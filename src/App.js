@@ -52,6 +52,8 @@ class App extends Component {
   }
 
   render() {
+    Fetch.getUserRepo_gql('facebook', 'relay')
+    .then(res => console.log(res.data));
     return (
       <div className="App">
         <div className="App-header">
